@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@mui/material";
 import { mockDataContacts } from "../../data/mockData";
 import Header from "../../components/Header";
@@ -10,7 +11,7 @@ const Contacts = () => {
   const colors = tokens(theme.palette.mode);
 
   const columns = [
-      { field: "id", headerName: "ID", flex: 0.3 },
+    { field: "id", headerName: "ID", flex: 0.3 },
     { field: "registrarId", headerName: "Registrar ID" },
     {
       field: "name",
@@ -34,18 +35,18 @@ const Contacts = () => {
       field: "email",
       headerName: "Email",
       flex: 1,
-      },
-        {
+    },
+    {
       field: "address",
       headerName: "Addres",
       flex: 1,
-      },
-            {
+    },
+    {
       field: "city",
       headerName: "City",
       flex: 1,
-      },
-                {
+    },
+    {
       field: "zipCode",
       headerName: "Zip Code",
       flex: 1,
@@ -79,11 +80,10 @@ const Contacts = () => {
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
             backgroundColor: colors.blueAccent[700],
-            },
-            "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
-              color:`${colors.grey[100]} !important`,
-          }
-          
+          },
+          "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
+            color: `${colors.grey[100]} !important`,
+          },
         }}
       >
         <DataGrid

@@ -1,3 +1,4 @@
+import React from "react";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
@@ -6,7 +7,7 @@ import Dashboard from "./scenes/dashboard";
 import Sidebar from "./scenes/global/Sidebar";
 import Team from "./scenes/team";
 import Contacts from "./scenes/contacts";
-import Invoices from "./scenes/invoices";
+import Invoices from "./scenes/invoices"; 
 import Form from "./scenes/form";
 import Calendar from "./scenes/calendar";
 import FAQ from "./scenes/faq";

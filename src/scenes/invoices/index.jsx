@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, useTheme, Typography } from "@mui/material";
 import { mockDataInvoices } from "../../data/mockData";
 import Header from "../../components/Header";
@@ -80,4 +81,3 @@ const Invoices = () => {
 };
 
 export default Invoices;
- 

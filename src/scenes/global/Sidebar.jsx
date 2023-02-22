@@ -1,3 +1,5 @@
+import React from "react";
+import { PropTypes } from "prop-types";
 import { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
@@ -15,10 +17,17 @@ import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import MenuOpenOutlinedIcon from '@mui/icons-material/MenuOpenOutlined';
-import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
+import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
+import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
+  Item.propTypes = {
+    title: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    selected: PropTypes.string.isRequired,
+    setSelected: PropTypes.string.isRequired,
+  };
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (

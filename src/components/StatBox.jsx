@@ -1,8 +1,17 @@
+import React from "react";
+import { PropTypes } from "prop-types";
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import ProgressCircle from "./ProgressCircle";
 
 const StatBox = ({ title, subtitle, icon, progress, increase }) => {
+  StatBox.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    progress: PropTypes.number.isRequired,
+    increase: PropTypes.number.isRequired,
+  };
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 

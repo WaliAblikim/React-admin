@@ -1,6 +1,7 @@
 import LineChart from "../../components/LineChart";
 import { Box } from "@mui/system";
 import Header from "../../components/Header";
+import React from "react";
 
 const Line = () => {
   return (

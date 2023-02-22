@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@mui/system";
 import Header from "../../components/Header";
 import BarChart from "../../components/BarChart";

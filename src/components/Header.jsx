@@ -1,7 +1,13 @@
+import React from "react";
+import { PropTypes } from "prop-types";
 import { Typography, Box, useTheme } from "@mui/material";
 import { tokens } from "../theme";
 
 const Header = ({ title, subtitle }) => {
+  Header.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+  };
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (

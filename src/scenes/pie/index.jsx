@@ -1,6 +1,7 @@
 import PieChart from "../../components/PieChart";
 import { Box } from "@mui/system";
 import Header from "../../components/Header";
+import React from "react";
 
 const Pie = () => {
   return (
